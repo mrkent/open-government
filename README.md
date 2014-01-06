@@ -49,8 +49,30 @@ Globalization and the internet have lower the cost of relocation and enabled eas
 
 To take it one step further, suppose governments are completely transparent, taxes (or membership dues) are voluntary, and anyone can propose changes to his government for review (state 2). If the changes are quickly accepted, then citizens would only be briefly in state 2 before going back to state 1. Now suppose governments can be created at a trivial cost. A rejection of proposed change (or even a delayed decision) then either results in immediate exits, either to an existing competing government or new clone of the original with added updates. We effectively remove state 3 and dramatically alter governments willingness to change (in order to preserve citizenship and their voluntary tax contributions). 
 
+Calculating the equilibrium distribution on this new reduced cycle, we easily see the hypothetical benefits.
+
+```python
+>>> c = np.matrix('0.2 0.8 0; 0 0.9 0.1; 0.1 0.8 0.1')
+>>> print c
+[[ 0.2  0.8  0. ]
+ [ 0.   0.9  0.1]
+ [ 0.1  0.8  0.1]]
+>>> prob_c = np.linalg.matrix_power(c,100)[0]
+>>> print prob_c
+[[ 0.01234568  0.88888889  0.09876543]]
+```
+
+If this sounds like an open source software project to you, it's because it basically is. Open Government is a project to create a framework for such a government. By leveraging cryptocurrencies, trustless contract arbitration, and competitive pressure, governments can become lean, mean service providers for a freer society.
 
 To do
 --------
+[ ] Describe the mechanics of such a government in detail
+[ ] Provide example of hypthetical cases
+[ ] Start a test government that provide services by accepting voluntary Bitcoin tax payments 
+
+
+If you have questions of how such a government can play out or things that require further explaination, submit an issue for concerns that can be addressed as an example. 
+
+If you're interested in contributing, open up an issue for any potential bugs, improvments to the Markov model, write about new ideas, or submit possible services to Bitcoin users. 
 
 
