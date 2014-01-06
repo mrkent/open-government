@@ -8,7 +8,7 @@ Open source algorithmic government with voluntary participation
 Background
 ----------
 
-What some anarchists understand as a "government" in it's current state is an organization with a monopoly on force or violence. Regardless whether a government's actions are beneficial for society or to what degree violence is required for an orderly society, all power governments currently wield derives from this monopoly. If most people can agree that monopolies are generally bad for consumers (citizens in this case), then it’s at least rational to explore the possibility of competing governments with voluntary participation by citizens. 
+What some define as a "government" in it's current state is an organization with a monopoly on force or violence. That is, regardless whether a government's actions are beneficial for society or to what degree violence is required for an orderly society, all power current governments wield derives from this monopoly. Since most people can agree that monopolies are generally bad for consumers (citizens in this case), then it’s at least rational to explore the possibility of competing governments with voluntary participation by citizens. 
 
 Such a system has historically been difficult. Throughout history, governments are replaced by new ones when it becomes incapable managing its affairs, resulting in either domestic uprisings or foreign takeovers. These transitions are extremely expensive and rarely peaceful. The new regimes rarely give up the newfound, highly lucrative monopoly after fronting the cost of the revolution/war with their human or monetary capital. 
 
