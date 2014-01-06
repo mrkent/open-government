@@ -110,9 +110,9 @@ If this sounds like an open source software project to you, it's because it basi
 
 To do
 --------
-[ ] Describe the mechanics of such a government in detail
-[ ] Provide example of hypthetical cases
-[ ] Start a test government that provide services by accepting voluntary Bitcoin tax payments 
+- [ ] Describe the mechanics of such a government in detail
+- [ ] Provide example of hypthetical cases
+- [ ] Start a test government that provide services by accepting voluntary Bitcoin tax payments 
 
 
 If you have questions of how such a government can play out or things that require further explaination, submit an issue for concerns that can be addressed as an example. 
