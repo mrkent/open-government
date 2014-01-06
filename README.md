@@ -23,7 +23,7 @@ Given the size and opacity of governments today, it’s fair to say that no citi
 
 We can perhaps model the history of governments with an overly simple Markov chain in which each state is a level of citizen satisfaction rate. State 0 is completely satisfied which we assume to be the case at the start of any new regime. States 1-4 correspond to above list. A state can only move up or down 1 step at a time, with exception to state 4 (on the edge of a rebellion), which can go to state 0 when the rebellion succeeds. Each arrow in the Markov chain indicate the probability of moving between states in each iteration. These transition probabilities were arbitrarily assigned while being reasonable and simple. We assign high values to all self-transitions except state 0 because governments generally stay the same. A fully satisfied population is rarely the case so we assigned state 0’s self-transition to be a low value (0.2). The transition from 1->0 and 4->3 are assigned 0 because there is no incentive and it’s beyond saving respectively. It’s clear that for the majority of the time (both in history and our model), we’d reside in either state 1 or 2. If this model is a reasonable approximation, then we can say that the role of governments are to stay in the lower states for as long as possible. We assume a government at state 2 is equally likely to change for better or for worse, while in state 3, the system has become more biased towards unsavory politicians. 
 
-![alt text](http://i.imgur.com/9qjlo93.png "Government life cycle MC")
+![alt text](http://i.imgur.com/24t4Xzh.png "Government life cycle MC")
 
 This Markov chain can be analyzed to make further conclusions about the society we’d live in. For example, an equilibrium distribution which represents the amount of time people spend in certain levels of satisfaction with their government can be calculated with the following python code. 
 
@@ -47,7 +47,11 @@ randwalk.py
 
 Globalization and the internet have lower the cost of relocation and enabled easy global communication. The emergence cryptocurrencies now allows greater numbers of unsatisfied citizens to exit his nation state economically, although not necessarily physically. Together, these advancements may produce a significantly different Markov chain in the not-immediate-but-perhaps-foreseeable future, one without state 4 and the resulting period of despair. 
 
+![alt text](http://i.imgur.com/Lvkcw8S.png "Future Govt MC")
+
 To take it one step further, suppose governments are completely transparent, taxes (or membership dues) are voluntary, and anyone can propose changes to his government for review (state 2). If the changes are quickly accepted, then citizens would only be briefly in state 2 before going back to state 1. Now suppose governments can be created at a trivial cost. A rejection of proposed change (or even a delayed decision) then either results in immediate exits, either to an existing competing government or new clone of the original with added updates. We effectively remove state 3 and dramatically alter governments willingness to change (in order to preserve citizenship and their voluntary tax contributions). 
+
+![alt text](http://i.imgur.com/ekfrLgS.png "Optimal Govt MC")
 
 Calculating the equilibrium distribution on this new reduced cycle, we easily see the hypothetical benefits.
 
