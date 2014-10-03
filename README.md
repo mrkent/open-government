@@ -58,7 +58,7 @@ prob_b = np.linalg.matrix_power(b,100)[0]
 
 `prob_a` is a vector in which each component is the expected percentage of time someone is expected to reside in the corresponding state. As previously claimed, most time will be spent in states 1 and 2. This model also predicts a total of over 15% of the time we can expect to live in states 3 and 4, representing very unfavorable conditions. When giving the state 3 government the benefit of the doubt by swaping probabilies of changing for better or for worse, the bad times still approach 15%. 
 
-As most of us have lived in periods mostly considered state 1 and 2 that value may be surprising. Generating 20 random walks using `randwalk.py` starting from state 1 and ending when reaching 0 or 20 iterations using `b` Markov matrix result in the following scenarios. In over half of these cases, someone with experience of 20 time steps won’t experience state 3 or 4. 
+As most of us have lived in periods mostly considered state 1 and 2 that value may be surprising. Generating 20 random walks using `randwalk.py` starting from state 1 and ending when reaching 0 or 20 iterations using `b` Markov matrix result in the following scenarios. In over half of these cases, someone with experience of 20 time steps won’t experience state 3 or 4. (20 steps was picked as average lifespan of a person is ~80, governmental change occurs on a scale of years, for example 4 - a single term of US presidency.)
 
 ```python
 >>> from randwalk import randwalk
@@ -90,7 +90,7 @@ Globalization and the internet have lower the cost of relocation and enabled eas
 
 ![alt text](http://i.imgur.com/Lvkcw8S.png "Future Govt MC")
 
-To take it one step further, suppose governments are completely transparent, taxes (or membership dues) are voluntary, and anyone can propose changes to his government for review (state 2). If the changes are quickly accepted, then citizens would only be briefly in state 2 before going back to state 1. Now suppose governments can be created at a trivial cost. A rejection of proposed change (or even a delayed decision) then either results in immediate exits, either to an existing competing government or new clone of the original with added updates. We effectively remove state 3 and dramatically alter governments willingness to change (in order to preserve citizenship and their voluntary tax contributions). 
+To take it one step further, suppose governments are completely transparent, taxes (or "membership/subscription fees") are voluntary, and anyone can propose changes to his government for review (state 2). If the changes are quickly accepted, then citizens would only be briefly in state 2 before going back to state 1. Now suppose governments can be created at a trivial cost. A rejection of proposed change (or even a delayed decision) then either results in immediate exits, either to an existing competing government or new clone of the original with added updates. We effectively remove state 3 and dramatically alter governments willingness to change (in order to preserve citizenship and their voluntary tax contributions). 
 
 ![alt text](http://i.imgur.com/ekfrLgS.png "Optimal Govt MC")
 
@@ -107,7 +107,7 @@ Calculating the equilibrium distribution on this new reduced cycle, we easily se
 [[ 0.01234568  0.88888889  0.09876543]]
 ```
 
-If this sounds like an open source software project to you, it's because it basically is. Open Government is a project to create a framework for such a government. By leveraging cryptocurrencies, trustless contract arbitration, and competitive pressure, governments can become lean, mean service providers for a freer society.
+If this sounds like an open source software project to you, it's because it basically is. Open Government is a project to create a framework for such a government. By leveraging cryptocurrencies, trustless contract arbitration, and competition, governments can become lean, mean service providers for a freer society.
 
 To do
 --------
@@ -116,6 +116,8 @@ To do
 - [ ] Start a test government that provide services by accepting voluntary Bitcoin tax payments 
 
 
-If you have questions of how such a government can play out or things that require further explaination, submit an issue for concerns that can be addressed as an example. 
+Questions of how such a government can play out or things that require further explaination?
+Submit an issue for concerns that can be addressed as an example. 
 
-If you're interested in contributing, open up an issue for any potential bugs, improvments to the Markov model, write about new ideas, or submit possible services to Bitcoin users. 
+Want to contribute?
+Open up an issue for any potential bugs, improvments to the Markov model, write about new ideas, or submit possible services to Bitcoin users. 
